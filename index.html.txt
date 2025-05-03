@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vibe‑Matcher</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Vibe‑Matcher</h1>
+      <p class="subtitle">Find your perfect vibe with colors, quotes, and music!</p>
+    </header>
+
+    <section class="upload-section">
+      <h2>Upload Your Image</h2>
+      <input type="file" id="imageInput" accept="image/*">
+    </section>
+
+    <section class="vibe-selection">
+      <h2>Select a Vibe</h2>
+      <div class="vibe-buttons">
+        <button onclick="generateVibe('Happy')">Happy</button>
+        <button onclick="generateVibe('Sad')">Sad</button>
+        <button onclick="generateVibe('Friends')">Friends</button>
+        <button onclick="generateVibe('Aesthetic')">Aesthetic</button>
+        <button onclick="generateVibe('Romantic')">Romantic</button>
+        <button onclick="generateVibe('Dark')">Dark</button>
+        <button onclick="generateVibe('Calm')">Calm</button>
+      </div>
+    </section>
+
+    <section class="results">
+      <h2>Suggested Colors</h2>
+      <div id="colorSuggestions" class="card-container"></div>
+
+      <h2>Recommended Songs</h2>
+      <div id="songList" class="card-container"></div>
+
+      <h2>Quotes</h2>
+      <div id="quoteList" class="card-container"></div>
+    </section>
+
+    <footer>
+      <p>Made with ❤ by Vibe‑Matcher</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
